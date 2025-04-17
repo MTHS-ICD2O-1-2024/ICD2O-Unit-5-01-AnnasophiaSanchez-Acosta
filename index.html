@@ -50,37 +50,36 @@
           <img src="./images/dice.gif" alt="Dice waving flag" />
         </div>
         <div class="page-content">
+          <h4>Guess a random number bettween 1 and 6!</h4>
         </div>
         <br />
         <form action="#">
-          Fahrenheit:
           <div class="mdl-textfield mdl-js-textfield">
             <!-- input pattern attribute -->
             <input
               class="mdl-textfield__input"
               type="text"
               pattern="-?[0-9]*(\.[0-9]+)?"
-              id="degresFahrenheit"
+              id="user-number"
               step="0.01"
             />
             <!-- mdl-textfield__label -->
-            <label class="mdl-textfield__label" for="degresFahrenheit"></label>
+            <label class="mdl-textfield__label" for="user-number"></label>
             <!-- class "mdl-textfield__error" -->
             <span class="mdl-textfield__error">Input is not a number.</span>
           </div>
-          degres Fahrenheit
           <br />
           <button
             class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-            onclick="calculateFahrenheittoCelsius()"
+            onclick="checkNumber()"
             type="button"
           >
-            Calculate
+            Check!
           </button>
         </form>
         <br />
         <div class="page-content-answer">
-          <div id="temperature"></div>
+          <div id="result"></div>
         </div>
       </main>
     </div>
