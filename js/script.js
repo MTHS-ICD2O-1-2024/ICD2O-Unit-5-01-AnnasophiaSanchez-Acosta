@@ -14,16 +14,14 @@ function checkNumber () {
   // input
   const userNumber = parseInt(document.getElementById('user-number').value)
   // process
-  If(userNumber === randomNumber)
-  {
+  if (userNumber === randomNumber) {
     // output
     document.getElementById(
       'result'
     ).innerHTML = '<p>You have guessed the correct number!</p>'
   }
 
-  If(userNumber !== randomNumber)
-  {
+  if (userNumber !== randomNumber) {
     // output
     document.getElementById('result').innerHTML =
       '<p>You have guessed the worong number!' +
